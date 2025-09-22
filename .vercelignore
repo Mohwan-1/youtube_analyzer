@@ -1,0 +1,7 @@
+# Vercel에서 제외할 파일들
+logo-test.html
+.claude/
+*.md
+.git/
+.gitignore
+README.md
