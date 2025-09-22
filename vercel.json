@@ -65,5 +65,9 @@
   },
   "env": {
     "NODE_ENV": "production"
-  }
+  },
+  "buildCommand": "echo 'Building static site'",
+  "installCommand": "echo 'No install needed'",
+  "devCommand": "echo 'Dev mode'",
+  "framework": null
 }
