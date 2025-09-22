@@ -19,7 +19,7 @@ const step1 = document.getElementById('step-1');
 const step2 = document.getElementById('step-2');
 
 // CTA Buttons
-const startAnalysisButtons = document.querySelectorAll('#start-analysis, #final-start, .pricing-cta');
+const startAnalysisButtons = document.querySelectorAll('#start-analysis, #final-start');
 const openApiModalButtons = document.querySelectorAll('#open-api-modal, .guide-cta');
 const showGuideButton = document.getElementById('show-guide');
 
@@ -578,45 +578,10 @@ function initParallaxEffect() {
     });
 }
 
-// Count up animation for pricing
+// Count up animation (가격 기능 제거됨)
 function initCountUpAnimation() {
-    const priceElements = document.querySelectorAll('.price');
-
-    const countUp = (element, target) => {
-        const increment = target / 50;
-        let current = 0;
-
-        const timer = setInterval(() => {
-            current += increment;
-            if (current >= target) {
-                current = target;
-                clearInterval(timer);
-            }
-
-            // Format based on the original text
-            if (element.textContent.includes('₩')) {
-                element.textContent = `₩${Math.floor(current).toLocaleString()}`;
-            } else {
-                element.textContent = Math.floor(current);
-            }
-        }, 20);
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting && !entry.target.dataset.animated) {
-                const originalText = entry.target.textContent;
-                const number = parseInt(originalText.replace(/[^\d]/g, ''));
-
-                if (number > 0) {
-                    entry.target.dataset.animated = 'true';
-                    countUp(entry.target, number);
-                }
-            }
-        });
-    });
-
-    priceElements.forEach(el => observer.observe(el));
+    // 가격 기능이 제거되어 더 이상 필요하지 않음
+    return;
 }
 
 // Form validation enhancements

@@ -944,120 +944,6 @@ body {
     border-radius: 4px;
 }
 
-/* Pricing Section */
-.pricing {
-    padding: var(--space-20) 0;
-    background: var(--bg-light);
-}
-
-.pricing-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--space-8);
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.pricing-card {
-    background: var(--bg-white);
-    border-radius: 16px;
-    padding: var(--space-8);
-    text-align: center;
-    box-shadow: var(--shadow-medium);
-    transition: var(--transition-normal);
-    position: relative;
-    overflow: hidden;
-}
-
-.pricing-card.popular {
-    transform: scale(1.05);
-    box-shadow: var(--shadow-large);
-    border: 2px solid var(--primary-blue);
-}
-
-.pricing-card.popular::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(135deg, var(--primary-blue), var(--accent-red));
-}
-
-.pricing-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-large);
-}
-
-.pricing-card.popular:hover {
-    transform: translateY(-5px) scale(1.05);
-}
-
-.pricing-badge {
-    position: absolute;
-    top: var(--space-4);
-    right: var(--space-4);
-    background: var(--primary-blue);
-    color: white;
-    padding: var(--space-1) var(--space-3);
-    border-radius: 12px;
-    font-size: var(--font-size-xs);
-    font-weight: 600;
-}
-
-.pricing-card.popular .pricing-badge {
-    background: var(--accent-red);
-}
-
-.pricing-card h3 {
-    font-size: var(--font-size-2xl);
-    font-weight: 600;
-    margin-bottom: var(--space-6);
-    color: var(--text-dark);
-}
-
-.pricing-price {
-    margin-bottom: var(--space-6);
-}
-
-.price {
-    font-size: var(--font-size-4xl);
-    font-weight: 700;
-    color: var(--primary-blue);
-}
-
-.period {
-    font-size: var(--font-size-lg);
-    color: var(--text-gray);
-}
-
-.pricing-features {
-    list-style: none;
-    text-align: left;
-    margin-bottom: var(--space-8);
-}
-
-.pricing-features li {
-    padding: var(--space-2) 0;
-    border-bottom: 1px solid var(--border-light);
-    color: var(--text-gray);
-}
-
-.pricing-features li:last-child {
-    border-bottom: none;
-}
-
-.pricing-cta {
-    width: 100%;
-}
-
-.pricing-note {
-    text-align: center;
-    color: var(--text-gray);
-    font-size: var(--font-size-sm);
-    margin-top: var(--space-8);
-}
 
 /* FAQ Section */
 .faq {
@@ -1521,13 +1407,6 @@ body {
         grid-template-columns: 1fr;
     }
 
-    .pricing-card.popular {
-        transform: none;
-    }
-
-    .pricing-card.popular:hover {
-        transform: translateY(-5px);
-    }
 
     .footer-content {
         flex-direction: column;
@@ -1584,9 +1463,6 @@ body {
         align-self: center;
     }
 
-    .pricing-grid {
-        grid-template-columns: 1fr;
-    }
 
     .modal-content {
         width: 95%;
