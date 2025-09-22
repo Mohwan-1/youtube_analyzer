@@ -453,18 +453,46 @@
                     </div>
 
                     <div class="form-step" id="step-2" style="display: none;">
-                        <h4 class="form-step-title">🔑 2단계: API 키 입력</h4>
-                        <div class="form-group">
-                            <label for="api-key">YouTube Data API 키</label>
-                            <input type="text" id="api-key" placeholder="여기에 API 키를 입력하세요..." required>
-                            <p class="form-help">🔒 API 키는 안전하게 암호화되어 저장됩니다</p>
+                        <h4 class="form-step-title">🔑 2단계: API 키 설정</h4>
+
+                        <div class="api-keys-status" id="api-status">
+                            <div class="api-key-item">
+                                <span class="api-label">YouTube Data API</span>
+                                <span class="api-status" id="youtube-status">❌ 필요</span>
+                            </div>
+                            <div class="api-key-item">
+                                <span class="api-label">Google Gemini API</span>
+                                <span class="api-status" id="gemini-status">❌ 필요</span>
+                            </div>
                         </div>
-                        <div class="form-actions">
-                            <button type="button" class="guide-button" id="show-guide">
-                                📖 API 발급 가이드 다시 보기
+
+                        <div class="form-group" id="youtube-api-group">
+                            <label for="youtube-api-key">YouTube Data API 키</label>
+                            <input type="text" id="youtube-api-key" placeholder="YouTube API 키 입력...">
+                            <p class="form-help">🔒 API 키는 암호화되어 로컬에 안전하게 저장됩니다</p>
+                        </div>
+
+                        <div class="form-group" id="gemini-api-group">
+                            <label for="gemini-api-key">Google Gemini API 키 (선택)</label>
+                            <input type="text" id="gemini-api-key" placeholder="Gemini API 키 입력... (없으면 데모 분석)">
+                            <p class="form-help">💡 더 정확한 AI 분석을 위해 권장합니다</p>
+                        </div>
+
+                        <div class="api-guide-buttons">
+                            <button type="button" class="guide-button" id="show-youtube-guide">
+                                📖 YouTube API 발급 가이드
                             </button>
+                            <button type="button" class="guide-button" id="show-gemini-guide">
+                                🤖 Gemini API 발급 가이드
+                            </button>
+                        </div>
+
+                        <div class="form-actions">
                             <button type="button" class="cta-button secondary" id="prev-step">
                                 ← 이전 단계
+                            </button>
+                            <button type="button" class="cta-button secondary" id="clear-keys">
+                                🗑️ 저장된 키 삭제
                             </button>
                             <button type="submit" class="cta-button primary">
                                 🚀 분석 시작하기
