@@ -1,0 +1,33 @@
+{
+  "name": "YouTube 리텐션 AI 분석기",
+  "short_name": "YouTube AI 분석기",
+  "description": "AI가 분석하는 유튜브 영상의 정확한 이탈 지점과 개선 방안",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "android-icon-48x48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "android-icon-48x48.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "android-icon-48x48.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "categories": ["business", "productivity", "utilities"],
+  "lang": "ko",
+  "scope": "/"
+}

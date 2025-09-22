@@ -1,0 +1,33 @@
+<svg width="200" height="80" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- SDI Logo Recreation -->
+
+  <!-- Background -->
+  <rect width="200" height="80" fill="#1e293b"/>
+
+  <!-- Letter S -->
+  <g>
+    <!-- Top curve of S -->
+    <path d="M10 10 Q40 10 40 25 Q40 35 25 35 Q10 35 10 50 Q10 65 40 65 L70 65 L70 55 L40 55 Q25 55 25 45 Q25 35 40 35 Q55 35 55 20 Q55 10 40 10 Z" fill="white"/>
+    <!-- Bottom part -->
+    <rect x="10" y="35" width="30" height="30" rx="15" fill="#1e293b"/>
+  </g>
+
+  <!-- Letter D -->
+  <g transform="translate(80, 0)">
+    <rect x="0" y="10" width="15" height="55" fill="white"/>
+    <path d="M15 10 Q45 10 45 37.5 Q45 65 15 65 Z" fill="white"/>
+    <circle cx="30" cy="37.5" r="12.5" fill="#1e293b"/>
+  </g>
+
+  <!-- Letter I -->
+  <g transform="translate(140, 0)">
+    <rect x="10" y="10" width="15" height="55" fill="white"/>
+    <circle cx="42" cy="20" r="8" fill="white"/>
+    <path d="M34 32 Q42 24 50 32 Q42 40 34 32" fill="#1e293b"/>
+  </g>
+
+  <!-- Text below -->
+  <text x="100" y="76" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="600" fill="white" letter-spacing="2px">
+    SOLUTION DRIVEN INNOVATORS
+  </text>
+</svg>

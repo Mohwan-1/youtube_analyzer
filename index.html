@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube 리텐션 AI 분석기 - 시청자 이탈 지점을 정확히 파악하세요</title>
+    <meta name="description" content="AI가 분석하는 유튜브 영상의 정확한 이탈 지점과 개선 방안. 왜 시청자들이 떠나는지 구체적인 인사이트를 받아보세요.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="YouTube 리텐션 AI 분석기">
+    <meta property="og:description" content="AI가 분석하는 유튜브 영상의 정확한 이탈 지점과 개선 방안">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./white@2x.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./android-icon-48x48.png">
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#2563eb">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="YouTube AI 분석기">
+    <link rel="apple-touch-icon" href="./android-icon-48x48.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="./black@2x.png" alt="YouTube 리텐션 AI 분석기" class="logo">
+                    <span class="logo-text">YouTube Retention AI</span>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="#features" class="nav-link">기능</a>
+                    <a href="#guide" class="nav-link">API 가이드</a>
+                    <a href="#pricing" class="nav-link">가격</a>
+                    <a href="#faq" class="nav-link">FAQ</a>
+                    <button class="cta-button nav-cta">무료 시작하기</button>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            왜 시청자들이 떠나는지<br>
+                            <span class="highlight">정확히 알고 싶지 않으세요?</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            AI가 분석하는 정확한 이탈 지점과 개선 방안으로<br>
+                            당신의 유튜브 영상을 한 단계 업그레이드하세요
+                        </p>
+                        <div class="hero-buttons">
+                            <button class="cta-button primary" id="start-analysis">
+                                <span>🚀</span> 무료로 분석 시작하기
+                            </button>
+                            <button class="cta-button secondary">
+                                <span>📹</span> 데모 보기
+                            </button>
+                        </div>
+                        <p class="hero-note">💳 신용카드 필요 없음 · 3개 영상 무료 분석</p>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="dashboard-preview">
+                            <div class="dashboard-header">
+                                <div class="dashboard-tabs">
+                                    <div class="tab active">📊 이탈 분석</div>
+                                    <div class="tab">💡 개선 방안</div>
+                                    <div class="tab">📈 비교 분석</div>
+                                </div>
+                            </div>
+                            <div class="dashboard-content">
+                                <div class="retention-chart">
+                                    <div class="chart-line"></div>
+                                    <div class="drop-point" style="left: 45%;">
+                                        <div class="drop-marker"></div>
+                                        <div class="drop-tooltip">
+                                            3분 27초<br>
+                                            <span>15% 이탈</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="insight-cards">
+                                    <div class="insight-card">
+                                        <span class="insight-icon">⚠️</span>
+                                        <span>갑작스러운 화면 전환</span>
+                                    </div>
+                                    <div class="insight-card">
+                                        <span class="insight-icon">💡</span>
+                                        <span>전환 효과 추가 권장</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problems Section -->
+        <section class="problems">
+            <div class="container">
+                <h2 class="section-title">이런 고민 있으셨죠? 🤔</h2>
+                <div class="problems-grid">
+                    <div class="problem-card">
+                        <div class="problem-icon">📉</div>
+                        <h3>retention curve는 보는데<br>정확한 이유를 모르겠어요</h3>
+                        <p>YouTube Analytics에서 보여주는 그래프만으로는 왜 시청자가 떠났는지 알 수 없죠</p>
+                    </div>
+                    <div class="problem-card">
+                        <div class="problem-icon">🤷‍♂️</div>
+                        <h3>어느 부분을 고쳐야 할지<br>감이 안 와요</h3>
+                        <p>막연하게 "더 재미있게 만들어야겠다"는 생각만 들고 구체적인 방법을 모르시겠죠</p>
+                    </div>
+                    <div class="problem-card">
+                        <div class="problem-icon">📊</div>
+                        <h3>비슷한 영상들과<br>비교하고 싶어요</h3>
+                        <p>내 영상이 같은 장르의 다른 영상들에 비해 어떤 수준인지 궁금하시죠</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solution Section -->
+        <section class="solution">
+            <div class="container">
+                <h2 class="section-title">AI가 정확히 알려드립니다 ✨</h2>
+                <div class="solution-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <div class="step-icon">🔗</div>
+                            <h3>YouTube API 연결</h3>
+                            <p>영상 데이터를 안전하게 가져옵니다</p>
+                        </div>
+                    </div>
+                    <div class="step-arrow">→</div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <div class="step-icon">🤖</div>
+                            <h3>AI 분석</h3>
+                            <p>이탈 지점과 원인을 정확히 파악합니다</p>
+                        </div>
+                    </div>
+                    <div class="step-arrow">→</div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <div class="step-icon">💡</div>
+                            <h3>개선안 제공</h3>
+                            <p>구체적인 액션 아이템을 받아보세요</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features" id="features">
+            <div class="container">
+                <h2 class="section-title">핵심 기능 🎯</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>정확한 이탈 시점 분석</h3>
+                        <p>"3분 27초, 화면 전환에서 15% 이탈"</p>
+                        <div class="feature-demo">초 단위까지 정확한 분석</div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>구체적인 원인 분석</h3>
+                        <p>"갑작스러운 톤 변화가 원인으로 추정"</p>
+                        <div class="feature-demo">AI가 찾아내는 숨겨진 패턴</div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📈</div>
+                        <h3>개선 방안 제시</h3>
+                        <p>"이 시점에 자막 추가 권장"</p>
+                        <div class="feature-demo">바로 실행 가능한 액션 아이템</div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔄</div>
+                        <h3>비교 분석</h3>
+                        <p>"같은 장르 상위 10% 영상과 비교"</p>
+                        <div class="feature-demo">경쟁력 파악과 벤치마킹</div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>실시간 모니터링</h3>
+                        <p>"업로드 직후부터 분석 시작"</p>
+                        <div class="feature-demo">24시간 자동 추적</div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>간편한 사용법</h3>
+                        <p>"API 설정 한 번으로 자동 분석"</p>
+                        <div class="feature-demo">5분이면 설정 완료</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- API Guide Section -->
+        <section class="api-guide" id="guide">
+            <div class="container">
+                <h2 class="section-title">YouTube API 연결하기 👨‍💻</h2>
+                <p class="section-subtitle">초등학생도 5분이면 OK! 단계별로 쉽게 따라해보세요</p>
+
+                <div class="guide-steps">
+                    <div class="guide-step">
+                        <div class="guide-step-number">STEP 1</div>
+                        <div class="guide-step-content">
+                            <h3>Google Cloud Console 접속</h3>
+                            <p>console.cloud.google.com에 접속하여 Google 계정으로 로그인하세요</p>
+                            <div class="guide-tip">💡 YouTube 채널과 같은 계정을 사용하세요!</div>
+                        </div>
+                    </div>
+
+                    <div class="guide-step">
+                        <div class="guide-step-number">STEP 2</div>
+                        <div class="guide-step-content">
+                            <h3>새 프로젝트 생성</h3>
+                            <p>"새 프로젝트" 버튼을 클릭하고 프로젝트 이름을 입력하세요</p>
+                            <div class="guide-tip">💡 "YouTube-Analytics" 같은 이름을 추천해요</div>
+                        </div>
+                    </div>
+
+                    <div class="guide-step">
+                        <div class="guide-step-number">STEP 3</div>
+                        <div class="guide-step-content">
+                            <h3>YouTube Data API v3 활성화</h3>
+                            <p>API 및 서비스 → 라이브러리에서 "YouTube Data API v3"를 검색하고 활성화하세요</p>
+                            <div class="guide-tip">💡 활성화까지 1-2분 정도 걸릴 수 있어요</div>
+                        </div>
+                    </div>
+
+                    <div class="guide-step">
+                        <div class="guide-step-number">STEP 4</div>
+                        <div class="guide-step-content">
+                            <h3>API 키 발급</h3>
+                            <p>사용자 인증 정보 → "사용자 인증 정보 만들기" → "API 키"를 선택하세요</p>
+                            <div class="guide-tip">💡 생성된 키는 안전한 곳에 보관하세요</div>
+                        </div>
+                    </div>
+
+                    <div class="guide-step">
+                        <div class="guide-step-number">STEP 5</div>
+                        <div class="guide-step-content">
+                            <h3>우리 서비스에 API 키 입력</h3>
+                            <p>아래 버튼을 클릭하여 발급받은 API 키를 입력하세요</p>
+                            <button class="guide-cta" id="open-api-modal">API 키 입력하기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Demo Results Section -->
+        <section class="demo-results">
+            <div class="container">
+                <h2 class="section-title">이런 결과를 받아볼 수 있어요 📋</h2>
+                <div class="demo-dashboard">
+                    <div class="demo-video-info">
+                        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=300&h=200&fit=crop" alt="Sample Video Thumbnail" class="demo-thumbnail">
+                        <div class="demo-video-details">
+                            <h3>🎮 최신 게임 리뷰 - 완전 솔직 후기</h3>
+                            <p>조회수: 125,000 · 게시일: 3일 전</p>
+                        </div>
+                    </div>
+
+                    <div class="demo-analysis">
+                        <div class="demo-chart">
+                            <h4>📊 시청 유지율 분석</h4>
+                            <div class="retention-visualization">
+                                <div class="retention-line"></div>
+                                <div class="critical-points">
+                                    <div class="point" style="left: 25%">
+                                        <div class="point-marker good"></div>
+                                        <span>1:30 - 인트로 종료</span>
+                                    </div>
+                                    <div class="point" style="left: 55%">
+                                        <div class="point-marker bad"></div>
+                                        <span>3:20 - 15% 이탈</span>
+                                    </div>
+                                    <div class="point" style="left: 80%">
+                                        <div class="point-marker neutral"></div>
+                                        <span>4:50 - 아웃트로</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="demo-insights">
+                            <h4>💡 AI 분석 결과</h4>
+                            <div class="insights-list">
+                                <div class="insight-item critical">
+                                    <span class="insight-time">3:20</span>
+                                    <div class="insight-content">
+                                        <strong>갑작스러운 화면 전환</strong>
+                                        <p>게임 플레이에서 메뉴로 급작스럽게 전환되면서 몰입도가 떨어졌습니다</p>
+                                        <div class="insight-action">🎬 전환 효과나 음성 안내 추가 권장</div>
+                                    </div>
+                                </div>
+                                <div class="insight-item good">
+                                    <span class="insight-time">1:30</span>
+                                    <div class="insight-content">
+                                        <strong>효과적인 인트로</strong>
+                                        <p>짧고 임팩트 있는 인트로로 시청자 관심을 끌었습니다</p>
+                                        <div class="insight-action">✅ 이 패턴을 다른 영상에도 적용해보세요</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing" id="pricing">
+            <div class="container">
+                <h2 class="section-title">간단한 가격, 강력한 기능 💪</h2>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <div class="pricing-badge">무료</div>
+                        <h3>스타터</h3>
+                        <div class="pricing-price">
+                            <span class="price">₩0</span>
+                            <span class="period">/월</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>✅ 월 3개 영상 분석</li>
+                            <li>✅ 기본 이탈 지점 분석</li>
+                            <li>✅ 개선 방안 제시</li>
+                            <li>❌ 비교 분석</li>
+                            <li>❌ 실시간 모니터링</li>
+                        </ul>
+                        <button class="pricing-cta secondary">무료 시작하기</button>
+                    </div>
+
+                    <div class="pricing-card popular">
+                        <div class="pricing-badge">인기</div>
+                        <h3>베이직</h3>
+                        <div class="pricing-price">
+                            <span class="price">₩12,900</span>
+                            <span class="period">/월</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>✅ 무제한 영상 분석</li>
+                            <li>✅ 상세 이탈 지점 분석</li>
+                            <li>✅ AI 개선 방안</li>
+                            <li>✅ 장르별 비교 분석</li>
+                            <li>❌ 실시간 모니터링</li>
+                        </ul>
+                        <button class="pricing-cta primary">베이직 시작하기</button>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div class="pricing-badge">프로</div>
+                        <h3>프로</h3>
+                        <div class="pricing-price">
+                            <span class="price">₩39,900</span>
+                            <span class="period">/월</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>✅ 모든 베이직 기능</li>
+                            <li>✅ 실시간 모니터링</li>
+                            <li>✅ 고급 AI 인사이트</li>
+                            <li>✅ API 연동</li>
+                            <li>✅ 우선 지원</li>
+                        </ul>
+                        <button class="pricing-cta secondary">프로 시작하기</button>
+                    </div>
+                </div>
+                <p class="pricing-note">🔒 언제든지 취소 가능 · 30일 환불 보장</p>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq" id="faq">
+            <div class="container">
+                <h2 class="section-title">자주 묻는 질문 ❓</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>API 설정이 어려워요 😰</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>걱정 마세요! 위의 5단계 가이드를 천천히 따라하시면 누구나 쉽게 설정할 수 있어요. 그래도 어려우시면 1:1 화상 지원도 제공합니다.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>분석에 얼마나 걸리나요? ⏰</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>영상 길이에 따라 다르지만, 보통 10분 영상 기준 2-3분 정도 소요됩니다. 분석이 완료되면 이메일로 알림을 보내드려요.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>데이터는 안전한가요? 🔒</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>API 키는 암호화되어 저장되며, 분석이 끝나면 영상 데이터는 즉시 삭제됩니다. 절대 제3자와 공유하지 않아요.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>어떤 영상이 분석 가능한가요? 📹</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>본인이 소유한 모든 YouTube 영상이 분석 가능합니다. 조회수나 길이에 제한은 없어요!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="final-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>지금 바로 시작해보세요! 🚀</h2>
+                    <p>왜 시청자들이 떠나는지 정확히 알아보세요</p>
+                    <div class="cta-buttons">
+                        <button class="cta-button primary large" id="final-start">
+                            무료로 분석 시작하기
+                        </button>
+                        <p class="cta-note">💳 신용카드 필요 없음 · 3개 영상 무료</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="./white@2x.png" alt="YouTube 리텐션 AI 분석기" class="footer-logo-img">
+                    <span>YouTube Retention AI</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#privacy">개인정보처리방침</a>
+                    <a href="#terms">이용약관</a>
+                    <a href="#contact">문의하기</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 YouTube Retention AI Analyzer. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- API Modal -->
+    <div class="modal" id="api-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>📊 YouTube 영상 분석 시작하기</h3>
+                <button class="modal-close" id="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="api-form">
+                    <div class="form-step" id="step-1">
+                        <h4 class="form-step-title">📋 1단계: 분석할 영상 선택</h4>
+                        <div class="form-group">
+                            <label for="video-url">YouTube 영상 URL</label>
+                            <input type="url" id="video-url" placeholder="https://www.youtube.com/watch?v=..." required>
+                            <p class="form-help">📹 분석하고 싶은 YouTube 영상의 링크를 입력하세요</p>
+                        </div>
+                        <div id="video-preview" class="video-preview" style="display: none;">
+                            <div class="video-info">
+                                <img id="video-thumbnail" src="" alt="영상 썸네일" class="video-thumbnail">
+                                <div class="video-details">
+                                    <h5 id="video-title">영상 제목</h5>
+                                    <p id="video-stats">조회수 • 업로드 날짜</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="cta-button primary" id="next-step" disabled>
+                            다음 단계로 →
+                        </button>
+                    </div>
+
+                    <div class="form-step" id="step-2" style="display: none;">
+                        <h4 class="form-step-title">🔑 2단계: API 키 입력</h4>
+                        <div class="form-group">
+                            <label for="api-key">YouTube Data API 키</label>
+                            <input type="text" id="api-key" placeholder="여기에 API 키를 입력하세요..." required>
+                            <p class="form-help">🔒 API 키는 안전하게 암호화되어 저장됩니다</p>
+                        </div>
+                        <div class="form-actions">
+                            <button type="button" class="guide-button" id="show-guide">
+                                📖 API 발급 가이드 다시 보기
+                            </button>
+                            <button type="button" class="cta-button secondary" id="prev-step">
+                                ← 이전 단계
+                            </button>
+                            <button type="submit" class="cta-button primary">
+                                🚀 분석 시작하기
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loading-overlay">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p>API 연결을 테스트하고 있습니다...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
