@@ -481,7 +481,6 @@ function initScrollAnimations() {
         { selector: '.problem-card', class: 'fade-in' },
         { selector: '.feature-card', class: 'fade-in' },
         { selector: '.step', class: 'fade-in' },
-        { selector: '.pricing-card', class: 'fade-in' },
         { selector: '.guide-step:nth-child(odd)', class: 'slide-in-left' },
         { selector: '.guide-step:nth-child(even)', class: 'slide-in-right' }
     ];
