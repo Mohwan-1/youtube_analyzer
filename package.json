@@ -1,0 +1,24 @@
+{
+  "name": "youtube-analyzer",
+  "version": "1.0.0",
+  "description": "YouTube 리텐션 AI 분석기 - 시청자 이탈 지점 분석 서비스",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'Static site - no build needed'",
+    "start": "echo 'Static site - no start needed'"
+  },
+  "keywords": [
+    "youtube",
+    "analytics",
+    "retention",
+    "ai",
+    "analysis"
+  ],
+  "author": "SDI",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mohwan-1/youtube_analyzer.git"
+  },
+  "homepage": "https://youtube-analyzer-pi.vercel.app/"
+}
